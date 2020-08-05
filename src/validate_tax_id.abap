@@ -14,6 +14,7 @@ IF ls_tax_num-bptaxnumber(1) <> 'C' AND ls_tax_num-bptaxnumber(1) <> 'I'.
 *You need to create the repository of error messages 
 CLEAR lv_message. 
 
+*data selection
 SELECT SINGLE FROM yy1messageclassXX FIELDS description
 WHERE code = '001' INTO @lv_message.
 
