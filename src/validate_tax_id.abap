@@ -5,6 +5,7 @@ DATA lv_digits TYPE string VALUE '0123456789'.
 DATA lv_message TYPE string.
 DATA: lv_len_tax TYPE i, lv_tax_digits TYPE string.
 
+*iterate through the internal table that contains the corresponding tax numbers for each business partner
 LOOP AT it_bp_tax_num INTO ls_tax_num.
 
 *TAX Number validation for Country 'XX'
